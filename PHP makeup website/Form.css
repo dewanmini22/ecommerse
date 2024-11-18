@@ -1,0 +1,136 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/banner-bg.png);
+}
+.container{
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.container .forms{
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    
+}
+.container .form{
+    width: 50%;
+    padding: 30px;
+}
+.active .login{
+    margin-left: -50%;
+    
+}
+.container .signup{
+    opacity: 0;
+}
+.active .signup{
+    opacity: 1;
+}
+.active .forms{
+    height: 600px;
+}
+.form .title{
+    text-align: center;
+    font-size: 27px;
+    font-weight: 600;
+}
+.title::before{
+    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+
+}
+.input-field{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    font-size: 23px;
+ 
+}
+
+.input-field i.icon{
+    left: 0;
+}
+
+.checkbox-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox-text .checkbox-content{
+    display: flex;
+    align-items: center;
+}
+.checkbox-content input{
+    margin-right: 10px;
+    accent-color: #4070f4;
+}
+.form .text{
+    color: #333;
+    font-size: 14px;
+}
+.form a.text{
+    color: #4070f4;
+    text-decoration: none;
+}
+.form a:hover{
+    text-decoration: underline;
+}
+.form .button{
+    margin-top: 35px;
+}
+.form .button input{
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f4;
+    cursor: pointer;
+    
+}
+.button input:hover{
+    background-color: #265df2;
+}
+.login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
